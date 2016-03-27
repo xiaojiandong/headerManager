@@ -56,3 +56,19 @@ SUBJ.HeaderManager.prototype = {
     ...
  });
 ```
+## headerManager.less
+```less
+// header显示的渐变动画
+.show-animation{
+  -webkit-animation: showAnimation 0.3s 0.1s backwards;
+}
+@-webkit-keyframes showAnimation {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+```
+
