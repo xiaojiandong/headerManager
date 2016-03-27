@@ -6,7 +6,7 @@
 ![image](https://github.com/xiaojiandong/headerManager/blob/master/img/headerStatus%3D1.png)
 ## 页面滚动，或调试为手机模式，滑动页面，则header部分隐藏，页面静止时，header显示
 ## 首屏中，header始终显示，returnTop始终隐藏，超出首屏，returnTop显示，点击回到顶部
-![image](https://github.com/xiaojiandong/headerManager/blob/master/img/return-top.png)
+![image](https://github.com/xiaojiandong/headerManager/blob/master/img/return-top-view.png)
 ## headerManager.js单例，控制header隐藏，显示的逻辑
 ```js
 SUBJ.HeaderManager.prototype = {
