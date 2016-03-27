@@ -1,0 +1,76 @@
+
+
+*{
+  font-family: '微软雅黑';
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-outer-wrap{
+  width: 640px;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid #000;
+//  border-shadow: 0px 0px 15px 15px;
+  .return-top{
+    position: fixed;
+    display: none;
+    width: 70px;
+    height: 70px;
+    bottom:20px;
+    left : 50%;
+    margin-left: 220px;
+  }
+}
+
+.header-wrap{
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 640px;
+  height: 100px;
+  font-size: 24px;
+  color:#fff;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100px;
+  box-sizing: border-box;
+  .common-header{
+    width: 640px;
+    height: 100px;
+  }
+  .header-app{ // 应用内的header
+    .common-header;
+    background-color: #282828;
+  }
+  .header-share{ // 应用外的header，初始隐藏
+    .common-header;
+    background-color: #ae1111;
+    display: none;
+  }
+}
+
+.article{
+  margin-top: 100px;
+}
+
+.content-wrap{
+
+  width: 640px;
+  height: auto;
+}
+
+// header显示的渐变动画
+.show-animation{
+  -webkit-animation: showAnimation 0.3s 0.1s backwards;
+}
+@-webkit-keyframes showAnimation {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
