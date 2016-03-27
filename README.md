@@ -38,3 +38,21 @@ SUBJ.HeaderManager.prototype = {
    ...
   } 
 ```
+## main.js 入口逻辑
+```js
+ $(function(){
+    // 动态的往html中插入节点 
+    var contentListArr=['语文','数学','外语','文综','理综'];
+    contentListArr.forEach(function(value , index){
+      console.log('val : ' + value);
+      var content = "<section class='js_common_content'><h1>content " + (index+1) + value +"</h1></section>";
+      contentWrapObj.append(content);
+      $('.js_common_content').eq(index).css({
+            'background-color' :  contentBgColorArr[index],
+            'height' : winH + 'px'
+      });
+    });
+    // todo 其他逻辑
+    ...
+ });
+```
